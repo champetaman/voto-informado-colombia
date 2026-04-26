@@ -62,14 +62,14 @@ export default function QuizPage() {
           <button
             type="button"
             onClick={() => updateQuizMode(false)}
-            className={`min-h-11 rounded-md border px-4 py-3 text-left text-sm ${!useFullQuiz ? "border-civic bg-civic text-white" : "border-line bg-white hover:bg-paper"}`}
+            className={`min-h-16 rounded-md border px-4 py-3 text-left text-sm ${!useFullQuiz ? "border-civic bg-civic text-white" : "border-line bg-white hover:bg-paper"}`}
           >
             Versión rápida (24 preguntas)
           </button>
           <button
             type="button"
             onClick={() => updateQuizMode(true)}
-            className={`min-h-11 rounded-md border px-4 py-3 text-left text-sm ${useFullQuiz ? "border-civic bg-civic text-white" : "border-line bg-white hover:bg-paper"}`}
+            className={`min-h-16 rounded-md border px-4 py-3 text-left text-sm ${useFullQuiz ? "border-civic bg-civic text-white" : "border-line bg-white hover:bg-paper"}`}
           >
             Versión completa (32 preguntas, mayor precisión)
           </button>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 const THEME_KEY = "comparatuvoto-theme";
 const THEME_EVENT = "comparatuvoto-theme-change";
@@ -46,6 +46,12 @@ function SunIcon() {
 export function ThemeToggle() {
   const isDark = useSyncExternalStore(subscribe, getSnapshot, () => false);
 
+  useEffect(() => {
+    const next = window.localStorage.getItem(THEME_KEY) === "dark";
+    document.documentElement.classList.toggle("dark", next);
+    window.dispatchEvent(new Event(THEME_EVENT));
+  }, []);
+
   function toggleTheme() {
     const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
@@ -57,7 +63,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="inline-flex min-h-11 min-w-11 items-center justify-center bg-white px-3 py-2 text-ink hover:bg-paper"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-white text-ink hover:bg-paper"
       aria-label={isDark ? "Cambiar a tema claro" : "Cambiar a tema oscuro"}
       title={isDark ? "Tema claro" : "Tema oscuro"}
     >

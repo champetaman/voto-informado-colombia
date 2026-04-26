@@ -17,9 +17,7 @@ function isQuizAnswer(value: unknown): value is QuizAnswer {
   return optionIndex === null || (Number.isInteger(optionIndex) && optionIndex >= 0 && optionIndex <= 3);
 }
 
-export function loadAnswers() {
-  if (typeof window === "undefined") return null;
-  const raw = window.sessionStorage.getItem(QUIZ_STORAGE_KEY);
+export function parseAnswers(raw: string | null) {
   if (!raw) return null;
 
   try {
@@ -29,6 +27,11 @@ export function loadAnswers() {
   } catch {
     return null;
   }
+}
+
+export function loadAnswers() {
+  if (typeof window === "undefined") return null;
+  return parseAnswers(window.sessionStorage.getItem(QUIZ_STORAGE_KEY));
 }
 
 export function saveAnswers(answers: QuizAnswer[]) {

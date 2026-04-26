@@ -7,7 +7,7 @@ import {
   Radar,
   RadarChart,
   ResponsiveContainer,
-  Tooltip
+  Tooltip,
 } from "recharts";
 import { dimensions, dimensionLabels } from "@/data/dimensions";
 import type { Candidate } from "@/data/types";
@@ -28,7 +28,7 @@ const shortLabels = {
   educacion_ciencia_innovacion: "Educacion",
   comunidades_etnicas: "Etnias",
   ambiente_biodiversidad: "Ambiente",
-  constitucionalismo_conservador: "Constitucion"
+  constitucionalismo_conservador: "Constitucion",
 } satisfies Record<(typeof dimensions)[number], string>;
 
 export function ComparisonCharts({ candidates }: { candidates: Candidate[] }) {
@@ -36,19 +36,28 @@ export function ComparisonCharts({ candidates }: { candidates: Candidate[] }) {
     dimension,
     label: shortLabels[dimension],
     fullLabel: dimensionLabels[dimension],
-    ...Object.fromEntries(candidates.map((candidate) => [candidate.id, Math.round(((candidate[dimension] + 2) / 4) * 100)]))
+    ...Object.fromEntries(
+      candidates.map((candidate) => [
+        candidate.id,
+        Math.round((Math.abs(candidate[dimension]) / 2) * 100),
+      ]),
+    ),
   }));
 
   return (
     <section className="rounded-lg border border-line bg-white p-5 shadow-soft">
-      <h2 className="font-semibold">Radar programatico por candidato</h2>
+      <h2 className="font-semibold">Radar programático por candidato</h2>
       <div className="mt-4 h-[420px]">
         <ResponsiveContainer width="100%" height="100%">
           <RadarChart data={data} outerRadius="72%">
             <PolarGrid stroke="#d7dee8" />
             <PolarAngleAxis dataKey="label" tick={{ fontSize: 11 }} />
             <PolarRadiusAxis domain={[0, 100]} tick={false} axisLine={false} />
-            <Tooltip labelFormatter={(_label, payload) => payload?.[0]?.payload.fullLabel ?? ""} />
+            <Tooltip
+              labelFormatter={(_label, payload) =>
+                payload?.[0]?.payload.fullLabel ?? ""
+              }
+            />
             {candidates.map((candidate) => (
               <Radar
                 key={candidate.id}

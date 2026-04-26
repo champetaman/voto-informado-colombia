@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BarChart3, FileText } from "lucide-react";
+import { ArrowRight, BarChart3, CircleUserRound, FileText } from "lucide-react";
 import { DisclaimerBanner } from "@/components/DisclaimerBanner";
 import { candidates } from "@/data/candidates";
 
@@ -14,10 +14,10 @@ export default function Home() {
               <p className="text-base font-semibold uppercase tracking-wide text-leaf sm:text-lg">
                 Colombia 2026-2030
               </p>
-              <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+              <h1 className="mt-3 max-w-3xl text-2xl font-bold tracking-tight text-ink sm:text-3xl">
                 Comparador de alineación programática presidencial
               </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-slateui">
+              <p className="mt-5 max-w-2xl text-base leading-8 text-slateui">
                 Votar bien informado exige comparar propuestas, no solo nombres,
                 tendencias o titulares. Esta herramienta toma las propuestas de
                 gobierno de los 5 principales candidatos con mayor porcentaje en
@@ -54,7 +54,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-5 divide-y divide-line">
-                {candidates.map((candidate, index) => (
+                {candidates.map((candidate) => (
                   <div
                     key={candidate.id}
                     className="grid grid-cols-[2rem_1fr] items-center gap-3 py-3"
@@ -63,7 +63,7 @@ export default function Home() {
                       className="grid h-8 w-8 place-items-center rounded-full text-xs font-bold text-white"
                       style={{ backgroundColor: candidate.color }}
                     >
-                      {index + 1}
+                      <CircleUserRound className="h-4 w-4" />
                     </span>
                     <div>
                       <p className="text-sm font-semibold text-ink">

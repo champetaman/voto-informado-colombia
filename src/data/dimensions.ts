@@ -16,26 +16,26 @@ export const dimensions: Dimension[] = [
   "educacion_ciencia_innovacion",
   "comunidades_etnicas",
   "ambiente_biodiversidad",
-  "constitucionalismo_conservador"
+  "constitucionalismo_conservador",
 ];
 
 export const dimensionLabels: Record<Dimension, string> = {
-  seguridad_firmeza: "seguridad y autoridad institucional",
-  negociacion_paz: "paz, diálogo y reparación",
-  mercado_inversion: "mercado, inversión y crecimiento",
+  seguridad_firmeza: "Seguridad y autoridad institucional",
+  negociacion_paz: "Paz, diálogo y reparación",
+  mercado_inversion: "Mercado, inversión y crecimiento",
   estado_social: "Estado social y redistribución",
-  disciplina_fiscal: "disciplina fiscal",
+  disciplina_fiscal: "Disciplina fiscal",
   estado_pequeno_eficiente: "Estado pequeño y eficiente",
-  salud_mixta: "sistema de salud mixto",
-  transicion_energetica: "transición energética",
-  hidrocarburos_mineria: "hidrocarburos y minería",
-  descentralizacion: "descentralización y regiones",
-  cuidado_genero_diversidad: "cuidado, género y diversidad",
-  anticorrupcion_institucional: "anticorrupción institucional",
-  educacion_ciencia_innovacion: "educación, ciencia e innovación",
-  comunidades_etnicas: "comunidades étnicas",
-  ambiente_biodiversidad: "ambiente y biodiversidad",
-  constitucionalismo_conservador: "constitucionalismo conservador"
+  salud_mixta: "Sistema de salud mixto",
+  transicion_energetica: "Transición energética",
+  hidrocarburos_mineria: "Hidrocarburos y minería",
+  descentralizacion: "Descentralización y regiones",
+  cuidado_genero_diversidad: "Cuidado, género y diversidad",
+  anticorrupcion_institucional: "Anticorrupción institucional",
+  educacion_ciencia_innovacion: "Educación, ciencia e innovación",
+  comunidades_etnicas: "Comunidades étnicas",
+  ambiente_biodiversidad: "Ambiente y biodiversidad",
+  constitucionalismo_conservador: "Constitucionalismo conservador",
 };
 
 export const comparisonTopics = [
@@ -53,5 +53,5 @@ export const comparisonTopics = [
   "Regionalización",
   "Vivienda",
   "Política exterior",
-  "Bienestar animal"
+  "Bienestar animal",
 ];
