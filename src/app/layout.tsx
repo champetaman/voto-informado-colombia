@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { QuizSettingsProvider } from "@/components/QuizSettingsProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const siteUrl = "https://comparatuvoto.co";
@@ -112,11 +113,12 @@ export default function RootLayout({
             </header>
             <div id="contenido" className="flex-1 bg-paper">
               {children}
+              <SpeedInsights />
+              <Analytics />
             </div>
             <Footer />
           </div>
         </QuizSettingsProvider>
-        <Analytics />
       </body>
     </html>
   );
