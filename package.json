@@ -1,6 +1,6 @@
 {
   "name": "voto-programatico-colombia",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "16.2.4",
+    "@vercel/analytics": "2.0.1",
     "clsx": "2.1.1",
     "lucide-react": "1.11.0",
     "next": "16.2.4",
