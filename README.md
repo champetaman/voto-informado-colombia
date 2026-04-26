@@ -1,102 +1,102 @@
 # comparatuvoto
 
-Comparador de alineacion programatica presidencial para Colombia 2026-2030.
+Comparador de alineación programática presidencial para Colombia 2026-2030.
 
-La aplicacion permite responder un cuestionario politico neutral y comparar las respuestas con programas oficiales de gobierno. El resultado muestra porcentajes de alineacion, coincidencias, diferencias y graficos comparativos.
+La aplicación permite responder un cuestionario político neutral y comparar las respuestas con programas oficiales de gobierno. El resultado muestra porcentajes de alineación, coincidencias, diferencias y gráficos comparativos.
 
-No es una encuesta electoral, no predice resultados y no recomienda votar por ninguna formula.
+No es una encuesta electoral, no predice resultados y no recomienda votar por ninguna fórmula.
 
-## Que permite hacer
+## Qué permite hacer
 
-- Responder un cuestionario programatico en version rapida o completa.
+- Responder un cuestionario programático en versión rápida o completa.
 - Marcar cada respuesta como normal, importante o muy importante.
-- Ver un ranking de alineacion con las formulas presidenciales cargadas.
-- Revisar coincidencias y diferencias por dimensiones de politica publica.
-- Comparar candidatos por tema en vista textual o grafica.
+- Ver un ranking de alineación con las fórmulas presidenciales cargadas.
+- Revisar coincidencias y diferencias por dimensiones de política pública.
+- Comparar candidatos por tema en vista textual o gráfica.
 - Consultar las fuentes oficiales usadas como base.
 - Rehacer el cuestionario sin crear cuenta ni enviar datos a un servidor.
 
 ## Candidaturas incluidas
 
-La comparacion usa las formulas presidenciales cargadas en la aplicacion:
+La comparación usa las fórmulas presidenciales cargadas en la aplicación:
 
-- Ivan Cepeda Castro y Aida Marina Quilcue Vivas - Movimiento Politico Pacto Historico.
-- Paloma Susana Valencia Laserna y Juan Daniel Oviedo Arango - Partido Centro Democratico.
-- Claudia Nayibe Lopez Hernandez y Leonardo Humberto Huerta Gutierrez - Con Claudia Imparables.
-- Abelardo Gabriel de la Espriella Otero y Jose Manuel Restrepo Abondano - Defensores de la Patria.
-- Sergio Fajardo Valderrama y Edna Cristina del Socorro Bonilla Seba - Partido Politico Dignidad & Compromiso.
+- Iván Cepeda Castro y Aida Marina Quilcue Vivas - Movimiento Político Pacto Histórico.
+- Paloma Susana Valencia Laserna y Juan Daniel Oviedo Arango - Partido Centro Democrático.
+- Claudia Nayibe López Hernández y Leonardo Humberto Huerta Gutiérrez - Con Claudia Imparables.
+- Abelardo Gabriel de la Espriella Otero y José Manuel Restrepo Abondano - Defensores de la Patria.
+- Sergio Fajardo Valderrama y Edna Cristina del Socorro Bonilla Seba - Partido Político Dignidad & Compromiso.
 
 ## Cuestionario
 
 Hay dos modos:
 
-- Version rapida: 24 preguntas.
-- Version completa: 32 preguntas.
+- Versión rápida: 24 preguntas.
+- Versión completa: 32 preguntas.
 
-Cada pregunta tiene cuatro opciones de respuesta. Cada opcion esta asociada a una o varias dimensiones programaticas. La persona tambien puede definir la importancia de cada respuesta:
+Cada pregunta tiene cuatro opciones de respuesta. Cada opción está asociada a una o varias dimensiones programáticas. La persona también puede definir la importancia de cada respuesta:
 
 - Normal: peso base.
 - Importante: mayor peso.
-- Muy importante: peso maximo.
+- Muy importante: peso máximo.
 
 ## Temas cubiertos
 
-El cuestionario y la comparacion incluyen temas como:
+El cuestionario y la comparación incluyen temas como:
 
 - Seguridad, justicia y crimen organizado.
-- Paz y procesos de negociacion.
-- Corrupcion e instituciones.
-- Economia, impuestos y gasto publico.
+- Paz y procesos de negociación.
+- Corrupción e instituciones.
+- Economía, impuestos y gasto público.
 - Salud.
-- Energia, mineria y transicion energetica.
+- Energía, minería y transición energética.
 - Ambiente, agua y biodiversidad.
-- Educacion, ciencia, innovacion y juventud.
+- Educación, ciencia, innovación y juventud.
 - Campo, vivienda y regiones.
-- Mujeres, cuidado, diversidad y comunidades etnicas.
-- Politica exterior.
+- Mujeres, cuidado, diversidad y comunidades étnicas.
+- Política exterior.
 - Democracia, protesta social y estilo de gobierno.
 
-## Como se calcula el resultado
+## Cómo se calcula el resultado
 
-La aplicacion convierte las respuestas en un perfil programatico. Luego compara ese perfil con el perfil asignado a cada candidatura segun sus propuestas oficiales.
+La aplicación convierte las respuestas en un perfil programático. Luego compara ese perfil con el perfil asignado a cada candidatura según sus propuestas oficiales.
 
-El porcentaje de alineacion representa cercania programatica, no apoyo electoral. Un puntaje alto significa que las respuestas dadas se parecen mas al perfil programatico de esa formula en las dimensiones respondidas.
+El porcentaje de alineación representa cercanía programática, no apoyo electoral. Un puntaje alto significa que las respuestas dadas se parecen más al perfil programático de esa fórmula en las dimensiones respondidas.
 
 La confianza del resultado depende de la cantidad de respuestas usadas:
 
 - Menos de 12 respuestas: baja confianza.
 - De 12 a 20 respuestas: confianza media.
-- Mas de 20 respuestas: alta confianza.
+- Más de 20 respuestas: alta confianza.
 
 ## Fuentes
 
-La plataforma usa programas oficiales de gobierno como fuente principal. No usa encuestas, noticias, redes sociales, opiniones externas ni historial politico para calcular la alineacion.
+La plataforma usa programas oficiales de gobierno como fuente principal. No usa encuestas, noticias, redes sociales, opiniones externas ni historial político para calcular la alineación.
 
-Las fuentes pueden revisarse dentro de la aplicacion en la pagina de fuentes.
+Las fuentes pueden revisarse dentro de la aplicación en la página de fuentes.
 
 ## Privacidad
 
-Las respuestas se guardan localmente en el navegador durante la sesion. No se requiere registro de usuario.
+Las respuestas se guardan localmente en el navegador durante la sesión. No se requiere registro de usuario.
 
-Al reiniciar el cuestionario o cerrar la sesion del navegador, las respuestas pueden eliminarse segun el comportamiento del navegador.
+Al reiniciar el cuestionario o cerrar la sesión del navegador, las respuestas pueden eliminarse según el comportamiento del navegador.
 
 ## Rutas principales
 
-- `/`: pagina inicial.
+- `/`: página inicial.
 - `/cuestionario`: cuestionario interactivo.
-- `/resultado`: ranking, porcentaje de alineacion, coincidencias, diferencias y graficos.
-- `/comparar`: comparacion textual o grafica entre candidatos.
-- `/metodologia`: explicacion del metodo de calculo.
+- `/resultado`: ranking, porcentaje de alineación, coincidencias, diferencias y gráficos.
+- `/comparar`: comparación textual o gráfica entre candidatos.
+- `/metodologia`: explicación del método de cálculo.
 - `/fuentes`: enlaces a fuentes oficiales.
 
-## Ejecucion local
+## Ejecución local
 
 Requisitos:
 
 - Node.js.
 - npm.
 
-Instalacion:
+Instalación:
 
 ```bash
 npm install
@@ -114,7 +114,7 @@ Build:
 npm run build
 ```
 
-Revision:
+Revisión:
 
 ```bash
 npm run lint
@@ -122,6 +122,6 @@ npm run lint
 
 ## Licencia
 
-Este proyecto esta disponible para uso no comercial bajo los terminos descritos en `LICENSE`.
+Este proyecto está disponible para uso no comercial bajo los términos descritos en `LICENSE`.
 
-El uso comercial requiere permiso escrito explicito del autor.
+El uso comercial requiere permiso escrito explícito del autor.
