@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #102033;
+  --color-slateui: #607086;
+  --color-paper: #f8fafc;
+  --color-line: #d7dee8;
+  --color-civic: #1d4f74;
+  --color-leaf: #3a7d58;
+  --color-amberSoft: #f3c95f;
+  --shadow-soft: 0 16px 40px rgba(16, 32, 51, 0.08);
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #102033;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #f3c95f;
+  outline-offset: 2px;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background: #0f172a;
+  color: #e5edf6;
+}
+
+html.dark .bg-white {
+  background-color: #111c2e;
+}
+
+html.dark .bg-white\/95 {
+  background-color: rgb(17 28 46 / 0.95);
+}
+
+html.dark .bg-paper {
+  background-color: #0f172a;
+}
+
+html.dark .text-ink {
+  color: #e5edf6;
+}
+
+html.dark .text-slateui {
+  color: #a8b6c8;
+}
+
+html.dark .border-line {
+  border-color: #334155;
+}
+
+html.dark .bg-line {
+  background-color: #334155;
+}
+
+html.dark .shadow-soft {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+html.dark .hover\:bg-paper:hover {
+  background-color: #172338;
+}
+
+html.dark .hover\:text-ink:hover {
+  color: #e5edf6;
+}
