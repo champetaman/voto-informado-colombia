@@ -48,6 +48,10 @@ select {
   outline-offset: 2px;
 }
 
+.github-icon-dark {
+  display: none;
+}
+
 html.dark {
   color-scheme: dark;
 }
@@ -95,4 +99,12 @@ html.dark .hover\:bg-paper:hover {
 
 html.dark .hover\:text-ink:hover {
   color: #e5edf6;
+}
+
+html.dark .github-icon-light {
+  display: none;
+}
+
+html.dark .github-icon-dark {
+  display: block;
 }
